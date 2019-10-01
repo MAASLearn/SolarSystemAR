@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.38073993, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 50294742}
   - component: {fileID: 50294741}
   m_Layer: 0
-  m_Name: TargetCube1.Back
+  m_Name: InvertedCube.Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,8 +160,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50294739}
   m_LocalRotation: {x: -0, y: 0, z: -1, w: -0.00000004371139}
-  m_LocalPosition: {x: 0, y: -0.1, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 3
@@ -204,7 +204,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1512178968}
+  - {fileID: 504319692}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -314,34 +314,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0.52156866, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!21 &199408167
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'TargetCube1.Right_scaledMaterial
-
-    11302'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 13d244aa31f744bab696e2dff7c60df3, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &221148429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1422830545968868, guid: b490ef9e574294d02a1f463701f2d3fa,
@@ -371,6 +343,34 @@ MonoBehaviour:
   planetRotationalPeriod: 1 Day
   planetDiameter: 12,742 km
   planetDistance: 149,598,023 km
+--- !u!21 &334953061
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'InvertedCube.Top_scaledMaterial
+
+    51226'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a79db47a7b5d47aeb8fe52475f06a6aa, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &384953661 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4959573423737235748, guid: e69d274fbaf13471e9ad8b45b1a08558,
@@ -513,10 +513,10 @@ MonoBehaviour:
   m_Script: {fileID: 1568443412, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: TargetCube1
+  mTrackableName: InvertedCube
   mPreserveChildSize: 0
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/ObsPlanets.xml
+  mDataSetPath: Vuforia/ObsAR.xml
 --- !u!4 &488546004
 Transform:
   m_ObjectHideFlags: 0
@@ -544,6 +544,34 @@ Transform:
   m_Father: {fileID: 1076890353}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &504319692
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'InvertedCube.Back_scaledMaterial
+
+    51226'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 7988fd9e64dc43f5962f151c3b24f31c, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &505412871
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,34 +683,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0.52156866, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!21 &527882629
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'TargetCube1.Top_scaledMaterial
-
-    11302'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ba740ec6eef14880870ed84e2420375d, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &539081012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -728,15 +728,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4792261716709274, guid: c59d3c9827fb04629abd4f0e9c2a6dba, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3999999
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4792261716709274, guid: c59d3c9827fb04629abd4f0e9c2a6dba, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40000167
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4792261716709274, guid: c59d3c9827fb04629abd4f0e9c2a6dba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000173
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4792261716709274, guid: c59d3c9827fb04629abd4f0e9c2a6dba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -953,15 +953,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4848317310284284, guid: 6e185f85eb1c14d68b77604294ee969f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.40000057
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4848317310284284, guid: 6e185f85eb1c14d68b77604294ee969f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4000016
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4848317310284284, guid: 6e185f85eb1c14d68b77604294ee969f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000167
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4848317310284284, guid: 6e185f85eb1c14d68b77604294ee969f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -973,34 +973,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e185f85eb1c14d68b77604294ee969f, type: 3}
---- !u!21 &683569328
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'TargetCube1.Front_scaledMaterial
-
-    11302'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 06c877fafd964db7bc72ab6c7b5d216a, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &696274341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4959573422154121505, guid: e69d274fbaf13471e9ad8b45b1a08558,
@@ -1132,15 +1104,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462868049888938, guid: b490ef9e574294d02a1f463701f2d3fa, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4000029
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4462868049888938, guid: b490ef9e574294d02a1f463701f2d3fa, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000284
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4462868049888938, guid: b490ef9e574294d02a1f463701f2d3fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462868049888938, guid: b490ef9e574294d02a1f463701f2d3fa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b490ef9e574294d02a1f463701f2d3fa, type: 3}
@@ -1258,6 +1234,34 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3996aa87a523c48519a72984f8a41085, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4c431bd558a0497dac51ea66f57cb4e, type: 3}
+--- !u!21 &828915718
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'InvertedCube.Bottom_scaledMaterial
+
+    51226'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8965c693fe1a46428704cc4d6353c127, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &884715022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 438958424039677015, guid: 7892783965a8448e4a87e0b7504a0d0c,
@@ -1465,7 +1469,7 @@ GameObject:
   - component: {fileID: 931182568}
   - component: {fileID: 931182567}
   m_Layer: 0
-  m_Name: TargetCube1.Top
+  m_Name: InvertedCube.Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,8 +1483,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931182565}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.1}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 4
@@ -1523,7 +1527,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 527882629}
+  - {fileID: 334953061}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1588,15 +1592,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4684260462271636, guid: 1db59ca3e53dc4083b27ebcfc248818a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4684260462271636, guid: 1db59ca3e53dc4083b27ebcfc248818a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40000167
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4684260462271636, guid: 1db59ca3e53dc4083b27ebcfc248818a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000167
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4684260462271636, guid: 1db59ca3e53dc4083b27ebcfc248818a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1608,34 +1612,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1db59ca3e53dc4083b27ebcfc248818a, type: 3}
---- !u!21 &949534118
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'TargetCube1.Left_scaledMaterial
-
-    11302'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b4fe45772cad437aa8ca9114a029667e, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &979946508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1781994397732442, guid: 8cf2a2ac9e3f64034a808ab43443639e,
@@ -1733,7 +1709,7 @@ GameObject:
   - component: {fileID: 1007879390}
   - component: {fileID: 1007879389}
   m_Layer: 0
-  m_Name: TargetCube1.Left
+  m_Name: InvertedCube.Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1747,8 +1723,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007879387}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.1, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 0
@@ -1791,7 +1767,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 949534118}
+  - {fileID: 1501156827}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1961,15 +1937,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4384350525748004, guid: a1d69f97b14c14d2287cd770e494781f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.40000045
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4384350525748004, guid: a1d69f97b14c14d2287cd770e494781f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40000147
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4384350525748004, guid: a1d69f97b14c14d2287cd770e494781f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000165
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4384350525748004, guid: a1d69f97b14c14d2287cd770e494781f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2057,15 +2033,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4802392276893600, guid: 25949a613b71b4863a57a25bfd1f3db8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4802392276893600, guid: 25949a613b71b4863a57a25bfd1f3db8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40000215
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4802392276893600, guid: 25949a613b71b4863a57a25bfd1f3db8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000215
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4802392276893600, guid: 25949a613b71b4863a57a25bfd1f3db8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2188,6 +2164,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4802392276893600, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802392276893600, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802392276893600, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9457e332bfa2414a84be8c43f149e9e, type: 3}
 --- !u!4 &1096279075 stripped
@@ -2277,34 +2265,6 @@ MonoBehaviour:
   m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &1423254117
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'TargetCube1.Bottom_scaledMaterial
-
-    11302'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b7559bb0dd644f2ebf1f313e609fb8e3, type: 3}
-        m_Scale: {x: -1, y: -1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1446945803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,7 +2278,7 @@ GameObject:
   - component: {fileID: 1446945806}
   - component: {fileID: 1446945805}
   m_Layer: 0
-  m_Name: TargetCube1.Bottom
+  m_Name: InvertedCube.Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2332,8 +2292,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446945803}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 5
@@ -2376,7 +2336,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1423254117}
+  - {fileID: 828915718}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2465,16 +2425,16 @@ Canvas:
     type: 3}
   m_PrefabInstance: {fileID: 4959573423644539689}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1512178968
+--- !u!21 &1501156827
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'TargetCube1.Back_scaledMaterial
+  m_Name: 'InvertedCube.Left_scaledMaterial
 
-    11302'
+    51226'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -2487,7 +2447,35 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: d8f41383ccc541e89eadeba4b74ed369, type: 3}
+        m_Texture: {fileID: 2800000, guid: eba6647051e147bfbbe6b2355afe3435, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!21 &1502463640
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'InvertedCube.Front_scaledMaterial
+
+    51226'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 5c9ab384dc144a909fceed1cc2d6bba5, type: 3}
         m_Scale: {x: -1, y: -1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -2559,15 +2547,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4159707298788856, guid: 8cf2a2ac9e3f64034a808ab43443639e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.40000007
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4159707298788856, guid: 8cf2a2ac9e3f64034a808ab43443639e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40000162
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4159707298788856, guid: 8cf2a2ac9e3f64034a808ab43443639e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000167
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4159707298788856, guid: 8cf2a2ac9e3f64034a808ab43443639e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2610,7 +2598,7 @@ GameObject:
   - component: {fileID: 1662257506}
   - component: {fileID: 1662257505}
   m_Layer: 0
-  m_Name: TargetCube1.Right
+  m_Name: InvertedCube.Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2624,8 +2612,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662257503}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.1, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 1
@@ -2668,7 +2656,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 199408167}
+  - {fileID: 1913872265}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2701,7 +2689,7 @@ GameObject:
   - component: {fileID: 1680867588}
   - component: {fileID: 1680867587}
   m_Layer: 0
-  m_Name: TargetCube1.Front
+  m_Name: InvertedCube.Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2715,8 +2703,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680867585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 108684578}
   m_RootOrder: 2
@@ -2759,7 +2747,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 683569328}
+  - {fileID: 1502463640}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2930,6 +2918,34 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &1913872265
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'InvertedCube.Right_scaledMaterial
+
+    51226'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a2e8ca717b3a45c39c23c19503c15b8c, type: 3}
+        m_Scale: {x: -1, y: -1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &1914685101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3024,15 +3040,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4032669032018724, guid: 4f5f27acd7a80463db3f1147b6757855, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.39999998
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4032669032018724, guid: 4f5f27acd7a80463db3f1147b6757855, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40000165
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4032669032018724, guid: 4f5f27acd7a80463db3f1147b6757855, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000167
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4032669032018724, guid: 4f5f27acd7a80463db3f1147b6757855, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3089,15 +3105,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4281273822592008, guid: 2b49b5011376b416c94f46799fc09a45, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.40000007
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4281273822592008, guid: 2b49b5011376b416c94f46799fc09a45, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40000147
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4281273822592008, guid: 2b49b5011376b416c94f46799fc09a45, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.40000167
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4281273822592008, guid: 2b49b5011376b416c94f46799fc09a45, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3427,15 +3443,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4107392093030446, guid: e6e2fd5ba3f604936abb0e853fa2302b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4000005
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4107392093030446, guid: e6e2fd5ba3f604936abb0e853fa2302b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.40000153
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4107392093030446, guid: e6e2fd5ba3f604936abb0e853fa2302b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4000015
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4107392093030446, guid: e6e2fd5ba3f604936abb0e853fa2302b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3584,17 +3600,17 @@ PrefabInstance:
     - target: {fileID: 438958422872368342, guid: 7892783965a8448e4a87e0b7504a0d0c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 438958422872368342, guid: 7892783965a8448e4a87e0b7504a0d0c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 438958422872368342, guid: 7892783965a8448e4a87e0b7504a0d0c,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7892783965a8448e4a87e0b7504a0d0c, type: 3}
@@ -4214,6 +4230,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2126108093}
+    - target: {fileID: 4959573423737235748, guid: e69d274fbaf13471e9ad8b45b1a08558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4959573422154121509, guid: e69d274fbaf13471e9ad8b45b1a08558,
         type: 3}
       propertyPath: m_LocalPosition.x
