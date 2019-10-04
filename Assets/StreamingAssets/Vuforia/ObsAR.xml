@@ -8,18 +8,32 @@
         <ImageTarget name="ObsARCubeBottom" size="1.000000 1.000000"/>
         <ImageTarget name="ObsARCubeBack" size="1.000000 1.000000"/>
         <ImageTarget name="ObsARTarget" size="1.000000 1.000000"/>
-        <ImageTarget name="InvertedCube.Right" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsBlack2.Back" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsBlack2.Right" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsBlack2.Top" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsBlack2.Left" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsBlack2.Front" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsBlack2.Bottom" size="1.000000 1.000000"/>
         <ImageTarget name="InvertedCube.Back" size="1.000000 1.000000"/>
-        <ImageTarget name="InvertedCube.Bottom" size="1.000000 1.000000"/>
-        <ImageTarget name="InvertedCube.Front" size="1.000000 1.000000"/>
-        <ImageTarget name="InvertedCube.Left" size="1.000000 1.000000"/>
+        <ImageTarget name="InvertedCube.Right" size="1.000000 1.000000"/>
         <ImageTarget name="InvertedCube.Top" size="1.000000 1.000000"/>
-        <ImageTarget name="ObsARCube.Right" size="1.000000 1.000000"/>
+        <ImageTarget name="InvertedCube.Left" size="1.000000 1.000000"/>
+        <ImageTarget name="InvertedCube.Front" size="1.000000 1.000000"/>
+        <ImageTarget name="InvertedCube.Bottom" size="1.000000 1.000000"/>
         <ImageTarget name="ObsARCube.Back" size="1.000000 1.000000"/>
-        <ImageTarget name="ObsARCube.Bottom" size="1.000000 1.000000"/>
-        <ImageTarget name="ObsARCube.Front" size="1.000000 1.000000"/>
-        <ImageTarget name="ObsARCube.Left" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsARCube.Right" size="1.000000 1.000000"/>
         <ImageTarget name="ObsARCube.Top" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsARCube.Left" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsARCube.Front" size="1.000000 1.000000"/>
+        <ImageTarget name="ObsARCube.Bottom" size="1.000000 1.000000"/>
+        <MultiTarget name="ObsBlack2">
+            <Part name="ObsBlack2.Left" translation="-0.5 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="ObsBlack2.Right" translation="0.5 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="ObsBlack2.Front" translation="0 0 0.5" rotation="AD: 1 0 0 0"/>
+            <Part name="ObsBlack2.Back" translation="0 0 -0.5" rotation="AD: 0 1 0 180"/>
+            <Part name="ObsBlack2.Top" translation="0 0.5 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="ObsBlack2.Bottom" translation="0 -0.5 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
         <MultiTarget name="InvertedCube">
             <Part name="InvertedCube.Left" translation="-0.5 0 0" rotation="AD: 0 1 0 -90"/>
             <Part name="InvertedCube.Right" translation="0.5 0 0" rotation="AD: 0 1 0 90"/>
